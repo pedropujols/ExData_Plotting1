@@ -11,6 +11,7 @@ dataDateTime <- cbind(dateTime, dataTime)
 if(!file.exists('figures')) dir.create('figures')
 png(filename = './figures/plot3.png', width = 480, height = 480, units='px')
 # makes plot3
+
 with(dataDateTime, {
   plot(Sub_metering_1~dateTime, type="l",
        ylab="Global Active Power (kilowatts)", xlab="")
